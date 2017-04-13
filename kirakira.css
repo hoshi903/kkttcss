@@ -1,0 +1,171 @@
+/* BACKGROUNDS */
+
+.ui {
+  /* Old browsers */
+  background: rgb(226, 240, 169);
+  /* FF3.6-15 */
+  background: -moz-linear-gradient(top, rgba(226, 240, 169, 1) 0%, rgba(201, 219, 127, 1) 45%, rgba(173, 196, 78, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, rgba(226, 240, 169, 1) 0%, rgba(201, 219, 127, 1) 45%, rgba(173, 196, 78, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(226, 240, 169, 1) 0%, rgba(201, 219, 127, 1) 45%, rgba(173, 196, 78, 1) 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f0a9', endColorstr='#adc44e', GradientType=0);
+}
+
+.drawer__header, .drawer__inner, .drawer__inner.darker { background: url("http://imgur.com/DjgxBsY.png"); }
+.column>.scrollable { background: none; }
+.column-header, .column-icon, .column-back-button, .column-link { background: #d0e093; }
+.column>.scrollable { background: rgba(0,0,0,0.1); }
+
+.navigation-bar, .search-results__section {
+    background: rgba(255,255,255,0.7);
+}
+
+
+.status, .notification {
+  /* Old browsers */
+  background: rgb(252, 252, 225);
+  /* FF3.6-15 */
+  background: -moz-linear-gradient(top, rgba(252, 252, 225, 1) 0%, rgba(252, 252, 225, 1) 65%, rgba(252, 252, 225, 1) 65%, rgba(249, 240, 174, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, rgba(252, 252, 225, 1) 0%, rgba(252, 252, 225, 1) 65%, rgba(252, 252, 225, 1) 65%, rgba(249, 240, 174, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(252, 252, 225, 1) 0%, rgba(252, 252, 225, 1) 65%, rgba(252, 252, 225, 1) 65%, rgba(249, 240, 174, 1) 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfce1', endColorstr='#f9f0ae', GradientType=0);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  margin-left: 64px;
+  margin-right: 2px;
+  padding-left: 8px;
+  border: solid 2px #e1c152;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.notification { margin-left: 1px;   /* Old browsers */
+  background: rgba(252, 252, 225, 0.8);
+  /* FF3.6-15 */
+  background: -moz-linear-gradient(top, rgba(252, 252, 225, 0.8) 0%, rgba(252, 252, 225, 0.8) 65%, rgba(252, 252, 225, 0.8) 65%, rgba(249, 240, 174, 0.8) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, rgba(252, 252, 225, 0.8) 0%, rgba(252, 252, 225, 0.8) 65%, rgba(252, 252, 225, 0.8) 65%, rgba(249, 240, 174, 0.8) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(252, 252, 225, 0.8) 0%, rgba(252, 252, 225, 0.8) 65%, rgba(252, 252, 225, 0.8) 65%, rgba(249, 240, 174, 0.8) 100%);
+}
+
+.notification__message  { margin-left: 25px; padding: 6px 0px 6px 0px; }
+.account { border: none; }
+
+.detailed-status {
+  /* Old browsers */
+  background: rgb(252, 252, 225);
+  /* FF3.6-15 */
+  background: -moz-linear-gradient(top, rgba(252, 252, 225, 1) 0%, rgba(252, 252, 225, 1) 65%, rgba(252, 252, 225, 1) 65%, rgba(249, 240, 174, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, rgba(252, 252, 225, 1) 0%, rgba(252, 252, 225, 1) 65%, rgba(252, 252, 225, 1) 65%, rgba(249, 240, 174, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(252, 252, 225, 1) 0%, rgba(252, 252, 225, 1) 65%, rgba(252, 252, 225, 1) 65%, rgba(249, 240, 174, 1) 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfce1', endColorstr='#f9f0ae', GradientType=0);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: solid 2px #e1c152;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
+}
+
+/* status baloon tail */
+
+.status::before, .notification::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent #e1c152 transparent transparent;
+  left: -22px;
+  top: 6px;
+  transform: scaleY(0.66);
+}
+.status::after, .notification::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent #fcfce0 transparent transparent;
+  left: -20px;
+  top: 6px;
+  transform: scaleY(0.66);
+}
+
+/* avatar */
+
+.status .avatar, .notification .avatar {
+  left: -74px;
+  top: -12px;
+  border: solid 2px #e1c152;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
+}
+
+/* TEXT STYLING */
+
+
+/* Tweet Text */
+
+p, .status__content {
+  color: #8b6d5d;
+}
+.navigation-bar span {
+  color: #6a4643 !important;
+}
+.muted .status__content p, .muted .status__content a {
+  color: #ad9588;
+}
+
+/* User @ Text & Links */
+
+strong, .status__display-name strong, .account__display-name strong, .status__content a, .reply-indicator__content a, a.h-card.u-url.p-nickname.mention, a.mention.hashtag span {
+  color: #ed649c !important;
+}
+span, .notification__display-name:hover {
+  color: #8e9956;
+}
+
+/* This Stuff just looks better bolded what can I say */
+
+.column-header, .column-back-button, .column-link {
+  font-family: "Segoe UI";
+  font-weight: bold;
+}
+
+/* UI Elements */
+
+.button {
+  background: #bfe755;
+}
+.button:hover, .button:active, .button:focus { background: #85a13b; }
+
+
+.drawer__tab, .fa-fw, .column-icon, .column-header, .column-link {
+  color: #6a4643;
+}
+.drawer__header a:hover { background: rgba(255,255,255,0.7) !important; }
+.search__input {
+    background: #d0e093;
+}
+.search__input:focus { background: #7c8658; }
+
+.detailed-status__action-bar {
+  background: transparent;
+  border: none;
+}
+.icon-button.active .fa-star {
+  color: rgb(202, 143, 4);
+  ;
+}
+div.drawer__inner div div div div span{
+    color: #fff;
+}
