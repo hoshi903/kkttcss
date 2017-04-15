@@ -1,4 +1,4 @@
-/* Matsodon: Kirakiratter Custom CSS V7.0
+/* Matsodon: Kirakiratter Custom CSS V7.1
   By Salil Gupta (@MasterDalK)
   Other Contributors: @pomo, @sumire, @bitmap, @hisagi, @lae
 
@@ -236,7 +236,7 @@
 
   /* Buttons & Tabs that aren't the KATSU! button */
     .drawer__tab, .icon-button, .column-icon, .column-header, .column-link, .column-back-button, .column-back-button span, .icon-button.disabled i.fa-envelope, .icon-button.disabled i.fa-lock  { color: #6a4643; }
-    .icon-button.active:hover, .drawer__tab:hover, .icon-button:hover, .column-icon:hover, .column-header:hover, .column-link:hover, .search-results__header span, .status__prepend div i  { color: #8b6461; }
+    .icon-button.active:hover, .drawer__tab:hover, .icon-button:hover, .column-icon:hover, .column-header:hover, .column-link:hover, .status__prepend div i  { color: #8b6461; }
     .drawer__tab, .icon-button.active:hover, .icon-button:hover, button.icon-button i.fa-retweet:hover { text-shadow: -1px -1px 0 #f5e33a, 1px -1px 0 #f5e33a, -1px  1px 0 #f5e33a, 1px  1px 0 #f5e33a; }
   /* Katsu Drawer & Search */
     .navigation-bar { background: rgba(237, 42, 144, 0.6); }
@@ -252,14 +252,15 @@
 
     .drawer__tab:hover { text-shadow: none; }
     .search-results__header { background: rgba(237, 42, 144, 0.6); border-bottom: solid 1px #8b6461; }
+
     .search-results__section { background: rgba(237, 42, 144, 0.6); }
     .compose-form__buttons .icon-button:hover { text-shadow: none; }
 
     div.drawer__inner div div div div span, .dropdown--active .dropdown__content>ul>li>a:hover{ color: #FFF; }
     div.drawer__inner div:not(.navigation-bar) div:last-child div:last-child div:nth-child(n+1) { padding-top: 5px !important;  }
 
-    .search-results__hashtag, .search-results__hashtag:hover, .search-results__hashtag:active, .search-results__hashtag:focus, .search-results .account__display-name strong { color: #efcfcf !important; }
-    .search-results .display-name span { color: #dfafaf; }
+    .search-results__hashtag, .search-results__hashtag:hover, .search-results__hashtag:active, .search-results__hashtag:focus, .search-results .account__display-name strong, .search-results__header span { color: #efcfcf !important; }
+    .search-results .display-name span,  { color: #dfafaf; }
     .search__icon .fa.active { color: #FFF; opacity: 1; }
     .search__icon .fa-times-circle.active { color: #FFF; opacity: 1; }
     .search__input { background: #d0e093; color: #FFF; }
