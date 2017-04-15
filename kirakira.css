@@ -13,6 +13,8 @@
     Column Resizing based on Browser Width
     Reply Indiciator Colour */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
   /* MEIRYO UI -- Japanese Font Face */
     @font-face { font-family: 'Meiryo UI'; font-style: normal; font-weight: normal; letter-spacing: .1em; padding: 1em; }
     @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -32,7 +34,6 @@
     /* .reply-indicator { background: #f5b9c2; } Pink */
   /* Reply Indicator -- END */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* BACKGROUNDS */
 
@@ -80,6 +81,7 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+  }
   @media screen and (min-width: 768px) {
     .ui::after {
       position: absolute;
@@ -260,7 +262,7 @@
     div.drawer__inner div:not(.navigation-bar) div:last-child div:last-child div:nth-child(n+1) { padding-top: 5px !important;  }
 
     .search-results__hashtag, .search-results__hashtag:hover, .search-results__hashtag:active, .search-results__hashtag:focus, .search-results .account__display-name strong, .search-results__header span { color: #efcfcf !important; }
-    .search-results .display-name span,  { color: #dfafaf; }
+    .search-results .display-name span { color: #dfafaf; }
     .search__icon .fa.active { color: #FFF; opacity: 1; }
     .search__icon .fa-times-circle.active { color: #FFF; opacity: 1; }
     .search__input { background: #d0e093; color: #FFF; }
