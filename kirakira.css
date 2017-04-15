@@ -73,8 +73,8 @@
   .muted a.status__content__spoiler-link, .status__content .status__content__spoiler-link:hover, .reply-indicator__content .status__content__spoiler-link:hover,  .dropdown--active .dropdown__content>ul>li>a:hover  { background: #f5b9c2; }
   .muted a.status__content__spoiler-link:hover, .status__content .status__content__spoiler-link, .reply-indicator__content .status__content__spoiler-link, .dropdown--active .dropdown__content>ul, .dropdown--active .dropdown__content>ul>li>a { background: #e3a4ad; }
 
-  .dropdown - active .dropdown__content.dropdown__left> ul {left: -14em; display: inline-block;}
-  .dropdown - active .dropdown__content.dropdown__left> ul li {width: 16em;}
+  .dropdown--active .dropdown__content.dropdown__left> ul {left: -14em; display: inline-block;}
+  .dropdown--active .dropdown__content.dropdown__left> ul li {width: 16em;}
   .dropdown__sep { border-color: #e57cb1; }
   .dropdown--active .dropdown__content:before { border-color: transparent transparent #e3a4ad transparent; }
 
